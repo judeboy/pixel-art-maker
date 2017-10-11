@@ -8,8 +8,8 @@ body, html {
 #art {
   display: table;
   border-spacing: 1px;
-  background-color: black;
-  border: 5px solid black;
+  background-color: grey;
+  border: 3px solid grey;
 }
 
 .row {
