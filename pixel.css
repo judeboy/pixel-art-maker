@@ -1,25 +1,31 @@
 body, html {
     padding: 0;
     margin: 0;
-    height: 100%;
+    height: 100vh;
 
 }
 
-#art {
-  display: table;
-  border-spacing: 1px;
-  background-color: grey;
-  border: 3px solid grey;
+h1 {
+  text-align: center;
 }
 
-.row {
-  display: table-row;
+.container {
+  position: relative;
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+#palette{
+     position:absolute;
+     bottom:0;
+     width:100%;
+     height:60px;
+     background-color: aqua;
+  }
 
 }
 
-.pixel {
-  display: table-cell;
-  background-color: white;
-  width: 20px;
-  height: 20px;
+.center {
+
 }
