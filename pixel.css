@@ -1,31 +1,33 @@
-body, html {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
 }
 
 h1 {
   text-align: center;
 }
 
-.container {
-  position: relative;
-  margin: auto;
-  width: 30%;
-  padding: 10px;
+#container {
+  position: absolute;
 }
 
-#palette{
-     position:absolute;
-     bottom:0;
-     width:100%;
-     height:60px;
-     background-color: aqua;
+
+#palette {
+
+    width: 40%;
+    height: 40px;
+    margin: auto;
   }
 
-}
+  .pen {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border: 2px solid black;
+  }
 
-.center {
-
-}
+  .pixels{
+    
+  }
