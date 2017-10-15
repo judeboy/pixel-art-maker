@@ -23,17 +23,24 @@ let grid = function () {
     }
   }
 }
-grid()
+  grid()
 
-let color = document.querySelector('pixels');
+  let changeColor = function (event) {
+    event.target.style.backgroundColor = 'lightgreen';
+    return false;
+  }
+  for(i=0;i<document.getElementsByClassName('pixels').length;i++){
+      let pixel = document.getElementsByClassName('pixels')[i]
+      console.log(pixel)
+      pixel.addEventListener('click', changeColor)
+    }
 
-color.addEventListener('click', function(){
-  alert('This is working')
+
+
+
+
+
 })
-
-})
-
-
 
 
 // let palette = function () {

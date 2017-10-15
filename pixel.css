@@ -15,13 +15,12 @@ h1 {
 
 
 #palette {
-
     width: 40%;
     height: 40px;
     margin: auto;
   }
 
-  .pen {
+  .colors {
     display: inline-block;
     width: 38px;
     height: 38px;
@@ -29,5 +28,15 @@ h1 {
   }
 
   .pixels{
-    
+
   }
+
+#red{
+
+}
+#blue{
+
+}
+#yellow{
+  
+}
