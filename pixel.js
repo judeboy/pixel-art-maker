@@ -25,24 +25,39 @@ let grid = function () {
 }
   grid()
 
-  let changeColor = function (event) {
-    event.target.style.backgroundColor = 'lightgreen';
+  let changeGridColor = function (event) {
+    event.target.style.backgroundColor = paintBrush;
     return false;
   }
-  for(i=0;i<document.getElementsByClassName('pixels').length;i++){
-      let pixel = document.getElementsByClassName('pixels')[i]
-      console.log(pixel)
-      pixel.addEventListener('click', changeColor)
-    }
 
-
-
-
-
-
+  for (let i = 0; i < document.getElementsByClassName('pixels').length; i++) {
+    let pixel = document.getElementsByClassName('pixels')[i]
+    console.log(pixel)
+    pixel.addEventListener('click', changeGridColor)
+  }
 })
 
+function setPaletteEvent () {
+  let palette = document.getElementById('palette');
+  palette.addEventListener('click', changeColorOfPaintBrush)
+}
 
+let paintBrush = '#ff0000';
+
+function changeColorOfPaintBrush(event){paintBrush = event.target.style.backgroundColor;
+}
+setPaletteEvent();
+
+
+
+//
+// })
+
+
+// let removeColor = function (event) {
+//   event.target.style.backgroundColor = 'white';
+//   return false;
+// }
 // let palette = function () {
 //   for (let y = 0; y < 4; y++) {
 //     let color = document.getElementById('con');
