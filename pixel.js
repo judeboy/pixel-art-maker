@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    console.log("DOM fully loaded and parsed");
 
 let grid = function () {
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 40; i++) {
     let canvas = document.getElementById('container');
     let column = document.createElement('div');
     canvas.appendChild(column)
@@ -26,9 +26,21 @@ let grid = function () {
 }
   grid()
 
+  let paintBrush = 'clear'
+
+  let changeColorOfPaintBrush = function (event){
+    paintBrush = event.target.style.backgroundColor
+  }
+
+  let setPaletteEvent = function () {
+    let palette = document.getElementById('palette')
+    palette.addEventListener('click', changeColorOfPaintBrush)
+  }
+
+  setPaletteEvent()
+
   let changeGridColor = function (event) {
     event.target.style.backgroundColor = paintBrush
-    return false
   }
 
   for (let i = 0; i < document.getElementsByClassName('pixels').length; i++) {
@@ -37,15 +49,3 @@ let grid = function () {
     pixel.addEventListener('click', changeGridColor)
   }
 })
-
-function setPaletteEvent () {
-  let palette = document.getElementById('palette')
-  palette.addEventListener('click', changeColorOfPaintBrush)
-}
-
-let paintBrush = '#ff0000'
-
-function changeColorOfPaintBrush(event){
-  paintBrush = event.target.style.backgroundColor
-}
-setPaletteEvent()
