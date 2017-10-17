@@ -1,8 +1,12 @@
 html,
 body {
-   margin:0;
-   padding:0;
-   height:100%;
+  margin:0;
+  padding:0;
+  height:100%;
+  background-image: url("http://www.guoguiyan.com/data/out/144/69286588-papyrus-wallpapers.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 h1 {
@@ -10,7 +14,9 @@ h1 {
 }
 
 #container {
-  position: absolute;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 
@@ -26,17 +32,3 @@ h1 {
     height: 38px;
     border: 2px solid black;
   }
-
-  .pixels{
-
-  }
-
-#red{
-
-}
-#blue{
-
-}
-#yellow{
-  
-}
